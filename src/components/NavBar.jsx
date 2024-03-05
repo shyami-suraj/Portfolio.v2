@@ -6,7 +6,7 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
   
 `;
 
@@ -14,7 +14,7 @@ const Logo = styled.h1`
   color: white;
   font-size: 1.5rem;
   margin: 0;
-margin-left:50px;
+/* margin-left:50px; */
   
 `;
 const NavContainer = styled.div`
