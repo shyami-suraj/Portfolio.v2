@@ -7,7 +7,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   padding: 1rem 2rem;
   backdrop-filter: blur(5px);
-  
+  flex-wrap: wrap;
 `;
 
 const Logo = styled.h1`
@@ -18,22 +18,34 @@ const Logo = styled.h1`
   
 `;
 const NavContainer = styled.div`
-  display: flex;
+  display: flex;  
   backdrop-filter: blur(10px);
-  height: 35px;
+  /* height: 35px;   */
   padding: 0px 10px 0px 10px;
   justify-content: space-around;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
   border-radius: 100px;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const NavLinks = styled.div`
   display: flex;
   justify-content: space-around;
   /* margin: 5vh; */
+  flex-wrap: wrap;
+
   padding: 0;
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const NavLink = styled.div`
@@ -62,7 +74,9 @@ const NavLink = styled.div`
 const LogoContainer = styled.div`
   color: white;
   margin: 0;
-
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const Navbar = () => {
