@@ -26,10 +26,10 @@ const NavContainer = styled.div`
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
   border-radius: 100px;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     justify-content: center;
     width: 100%;
   }
@@ -42,9 +42,9 @@ const NavLinks = styled.div`
   flex-wrap: wrap;
 
   padding: 0;
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     justify-content: center;
-    width: 100%;
+    width: 30%;
   }
 `;
 
@@ -74,7 +74,7 @@ const NavLink = styled.div`
 const LogoContainer = styled.div`
   color: white;
   margin: 0;
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: block;
   }
 `;
