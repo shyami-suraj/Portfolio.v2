@@ -44,7 +44,7 @@ const NavLinks = styled.div`
   padding: 0;
   @media (max-width: 800px) {
     justify-content: center;
-    width: 30%;
+    width: 10%;
   }
 `;
 
