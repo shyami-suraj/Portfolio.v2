@@ -1,7 +1,7 @@
 
 import './App.css';
 import Intro from './components/Intro';
-import Test from './components/Test';
+
 import NavBar from './components/NavBar';
 import styled from 'styled-components';
 import background from "./image/background.jpg";
@@ -21,7 +21,7 @@ function App() {
      <NavBar/>
      <Intro/>
      </Background>
-     <Test/>
+     
 
      
     </div>
