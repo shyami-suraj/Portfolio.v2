@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import me from "../image/me.png";
+import me from "../image/me.jpg";
 
 const Section = styled.section`
   padding: 2rem 0;
@@ -47,12 +47,12 @@ const Hero = () => {
   return (
     <Section>
 
-      <Title>Hi, I'm Suraj Manandhar</Title>
       
       <Image
         src={me}
         alt="Image"
-      />
+        />
+        <Title>Hi, I'm Suraj Manandhar</Title>
       <Subtitle>
         I'm a frontend developer with a passion for creating beautiful and
         intuitive user interfaces.
