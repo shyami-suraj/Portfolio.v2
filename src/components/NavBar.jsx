@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -8,64 +11,64 @@ const NavbarContainer = styled.nav`
   padding: 1rem 2rem;
   backdrop-filter: blur(5px);
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
 `;
 
 const Logo = styled.h1`
   color: white;
   font-size: 1.5rem;
   margin: 0;
-/* margin-left:50px; */
-  
-`;
-const NavContainer = styled.div`
-  display: flex;  
-  backdrop-filter: blur(10px);
-  /* height: 35px;   */
-  padding: 0px 10px 0px 10px;
-  justify-content: space-around;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-    0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
-  /* align-items: center; */
-  flex-wrap: wrap;
-
   @media (max-width: 800px) {
+    text-align: center;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+`;
+const NavContainer = styled.div`
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
+
+  @media (min-width: 800px) {
+    justify-content: center;
+    border-radius: 100px;
+    height: 35px;
+    backdrop-filter: blur(10px);
+  }
+
+  @media (max-width: 800px) {
+    backdrop-filter: blur(100%);
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
   }
 `;
 
 const NavLinks = styled.div`
   display: flex;
   justify-content: space-around;
-  /* margin: 5vh; */
-  flex-wrap: wrap;
-
   padding: 0;
   @media (max-width: 800px) {
     justify-content: center;
     width: 10%;
+    flex-wrap: wrap;
   }
 `;
 
 const NavLink = styled.div`
-  /* margin-right: 10rem; */
   margin: 5vh;
   display: flex;
-
-  &:first-child {
-    margin-left: 10px;
-  }
-
-  &:last-child {
-    margin-right: 10px;
-  }
 
   a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-
     &:hover {
       color: #ccc;
     }
@@ -73,9 +76,15 @@ const NavLink = styled.div`
 `;
 const LogoContainer = styled.div`
   color: white;
-  margin: 0;
+ 
+  
+  
   @media (max-width: 800px) {
-    display: block;
+    margin-top:10px;
+    text-align:center;
+    justify-content: center;
+    width: 100%;
+    /* flex-wrap: wrap;  */
   }
 `;
 
@@ -96,7 +105,12 @@ const Navbar = () => {
           </NavLink>
         </NavLinks>
       </NavContainer>
-      <LogoContainer>discord</LogoContainer>
+      <LogoContainer>
+        <FacebookIcon />
+        <InstagramIcon />
+        <GitHubIcon />
+        <LinkedInIcon />
+      </LogoContainer>
     </NavbarContainer>
   );
 };

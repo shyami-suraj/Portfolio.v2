@@ -1,5 +1,6 @@
 
 import './App.css';
+// import Test from './components/Test';
 import NavBar from './components/NavBar';
 import styled from 'styled-components';
 
@@ -13,6 +14,7 @@ function App() {
     <div className='background'>
      <Background >
      <NavBar/>
+     {/* <Test/> */}
 
      </Background>
      
