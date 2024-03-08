@@ -11,8 +11,11 @@ const NavbarContainer = styled.nav`
   padding: 1rem 2rem;
   backdrop-filter: blur(5px);
   flex-wrap: wrap;
-  position: sticky;
+ 
+  @media (min-width: 800px) {
+    position: sticky;
   top: 0;
+  }
 `;
 
 const Logo = styled.h1`
@@ -38,7 +41,7 @@ const NavContainer = styled.div`
   @media (min-width: 800px) {
     justify-content: center;
     border-radius: 100px;
-    height: 35px;
+    height: 3rem;
     backdrop-filter: blur(10px);
   }
 
@@ -76,16 +79,23 @@ const NavLink = styled.div`
 `;
 const LogoContainer = styled.div`
   color: white;
- 
-  
+  display: flex;
+  justify-content:space-around;
   
   @media (max-width: 800px) {
-    margin-top:10px;
-    text-align:center;
-    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+      
     width: 100%;
-    /* flex-wrap: wrap;  */
+    
   }
+`;
+const LogoLink = styled.div`
+    cursor: pointer;
+
+
+   
+
 `;
 
 const Navbar = () => {
@@ -106,10 +116,18 @@ const Navbar = () => {
         </NavLinks>
       </NavContainer>
       <LogoContainer>
-        <FacebookIcon />
-        <InstagramIcon />
-        <GitHubIcon />
-        <LinkedInIcon />
+        <LogoLink>
+          <FacebookIcon />
+        </LogoLink>
+        <LogoLink>
+          <InstagramIcon />
+        </LogoLink>
+        <LogoLink>
+          <LinkedInIcon />
+        </LogoLink>
+        <LogoLink>
+          <GitHubIcon />
+        </LogoLink>
       </LogoContainer>
     </NavbarContainer>
   );

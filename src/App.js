@@ -1,11 +1,16 @@
 
 import './App.css';
-// import Test from './components/Test';
+import Intro from './components/Intro';
+import Test from './components/Test';
 import NavBar from './components/NavBar';
 import styled from 'styled-components';
+import background from "./image/background.jpg";
 
 const Background = styled.div`
-
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center;
+  width:100%;
 `;
 
 
@@ -14,9 +19,10 @@ function App() {
     <div className='background'>
      <Background >
      <NavBar/>
-     {/* <Test/> */}
-
+     <Intro/>
      </Background>
+     <Test/>
+
      
     </div>
   );
