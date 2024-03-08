@@ -11,6 +11,7 @@ const Background = styled.div`
   background-size: cover;
   background-position: center;
   width:100%;
+  
 `;
 
 

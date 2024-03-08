@@ -6,15 +6,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const NavbarContainer = styled.nav`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   backdrop-filter: blur(5px);
   flex-wrap: wrap;
- 
+  justify-content: space-between;
+
   @media (min-width: 800px) {
     position: sticky;
-  top: 0;
+    top: 0;
   }
 `;
 
@@ -80,22 +80,17 @@ const NavLink = styled.div`
 const LogoContainer = styled.div`
   color: white;
   display: flex;
-  justify-content:space-around;
-  
+  justify-content:space-evenly;
+  font-size:50px;
   @media (max-width: 800px) {
+    
     margin-top: 10px;
     text-align: center;
-      
     width: 100%;
-    
   }
 `;
 const LogoLink = styled.div`
-    cursor: pointer;
-
-
-   
-
+  cursor: pointer;
 `;
 
 const Navbar = () => {
