@@ -1,10 +1,10 @@
-
+import React from 'react';
 import './App.css';
 import Intro from './components/Intro';
-
 import NavBar from './components/NavBar';
 import styled from 'styled-components';
 import background from "./image/background.jpg";
+import Dummydata from './components/Dummydata';
 
 const Background = styled.div`
   background-image: url(${background});
@@ -12,19 +12,19 @@ const Background = styled.div`
   background-position: center;
   width:100%;
   
+  
 `;
 
-
 function App() {
-  return (
-    <div className='background'>
-     <Background >
-     <NavBar/>
-     <Intro/>
-     </Background>
-     
 
-     
+
+  return (
+    <div>
+      <Background>
+        <NavBar  />
+        <Intro />
+      </Background>
+      <Dummydata/>
     </div>
   );
 }

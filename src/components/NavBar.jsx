@@ -80,10 +80,9 @@ const NavLink = styled.div`
 const LogoContainer = styled.div`
   color: white;
   display: flex;
-  justify-content:space-evenly;
-  font-size:50px;
+  justify-content: space-evenly;
+  font-size: 50px;
   @media (max-width: 800px) {
-    
     margin-top: 10px;
     text-align: center;
     width: 100%;
@@ -91,6 +90,14 @@ const LogoContainer = styled.div`
 `;
 const LogoLink = styled.div`
   cursor: pointer;
+  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #ccc;
+    }
+  }
 `;
 
 const Navbar = () => {
@@ -112,16 +119,32 @@ const Navbar = () => {
       </NavContainer>
       <LogoContainer>
         <LogoLink>
-          <FacebookIcon />
+          <a href="https://www.facebook.com/surajshyami" target="_blank">
+            <FacebookIcon fontSize="large" />
+          </a>
         </LogoLink>
         <LogoLink>
-          <InstagramIcon />
+          <a
+            href="https://www.instagram.com/shyami_suraj_official/"
+            target="_blank"
+          >
+            <InstagramIcon fontSize="large" />
+          </a>
         </LogoLink>
         <LogoLink>
-          <LinkedInIcon />
+          <a
+            href="https://www.linkedin.com/in/suraj-manandhar-b8a71a165/"
+            target="_blank"
+          >
+            {" "}
+            <LinkedInIcon fontSize="large" />
+          </a>
         </LogoLink>
         <LogoLink>
-          <GitHubIcon />
+          <a href="https://github.com/shyami-suraj" target="_blank">
+            {" "}
+            <GitHubIcon fontSize="large" />
+          </a>
         </LogoLink>
       </LogoContainer>
     </NavbarContainer>
