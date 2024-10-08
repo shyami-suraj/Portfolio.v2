@@ -91,7 +91,7 @@ const MySkillsPage = () => {
 <SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
-            <Main>
+            {/* <Main>
 <Title>
     <Design width={40} height={40} /> Designer
 </Title>
@@ -140,7 +140,7 @@ VScode, Github, Codepen etc.
 </p>
 </Description>
 
-            </Main>
+            </Main> */}
 
             <BigTitle text="SKILLS" top="80%" right="30%" />
 
